@@ -44,6 +44,10 @@ describe('MoDom', function() {
       // md.hasClass('body','placeholder')
       expect(md.hasClass('body','placeholder')).to.be.true
     })
+    it('should verify nav-bar has class navbar-inverse anywhere', function() {
+      // md.hasClass('body','placeholder')
+      expect(md.hasClass('body','placeholder')).to.be.true
+    })
   })
   describe('md.getAttr()', function() {
     it('should dislay table with X children', function() {

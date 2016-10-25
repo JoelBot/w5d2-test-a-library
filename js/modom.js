@@ -60,28 +60,37 @@
     } //: Remove a CSS class from an element
     var hasClass = function(selector, classCheck) {
         // console.log("Output for hasClass function:")
-        console.log(all(selector))
-        return all(selector).classList.contains('classCheck')
+        // console.log(all(selector))
+        return one(selector).classList.contains(classCheck)
         //     return true
         // }
         // else {
         //     return false
         // }
     }//: Return true if an element contains a CSS class in it\'s CSS attribute (see classList documentation)
-    var getAttr = function(selector, attribute){
-        // var attributeVariable = document.querySelector(selector)
-        // // console.log("Output for getAttr function:")
-        // attributeVariable.classList.forEach(function(item) {
-        //     console.log(item)
-        // })
-        console.dir(document.querySelector(selector).getAttribute('clientHeight'))
-        return one(selector).getAttribute(attribute) //Collins approach
-        // console.log(attributeVariable)
-    }//: Get an HTML attribute from an element
-    var setAttr = function(selector, attribute) {
-        // console.log(selector)
-        return document.querySelector(selector).className = attribute
-    } //: Set an HTML attribute on an element
+   //  var getAttr = function(selector, attribute){
+   //      // var attributeVariable = document.querySelector(selector)
+   //      // // console.log("Output for getAttr function:")
+   //      // attributeVariable.classList.forEach(function(item) {
+   //      //     console.log(item)
+   //      // })
+   //      console.dir(document.querySelector(selector).getAttribute('clientHeight'))
+   //      return one(selector).getAttribute(attribute) //Collins approach
+   //      // console.log(attributeVariable)
+   //  }//: Get an HTML attribute from an element
+   //  var setAttr = function(selector, attribute) {
+   //      // console.log(selector)
+   //      return document.querySelector(selector).className = attribute
+   //  } //: Set an HTML attribute on an element
+   //
+    var getAttr = function (selector, attr) {
+       return one(selector).getAttribute(attr)
+   }
+
+   var setAttr = function (selector, attr, value) {
+       one(selector).setAttribute(attr, value)
+       return window.md
+   }
     var setHTML = function(selector, htmlToSet) {
         return one(selector).innerHTML = htmlToSet
     } //: Set the innerHTML of an element
