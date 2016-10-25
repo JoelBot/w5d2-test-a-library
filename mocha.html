@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mocha</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Content goes here. -->
+  <div id="mocha">
+
+  </div>
+  <!-- Scripts go here. -->
+
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script src="js/chai.js"></script>
+  <script src="js/modom.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script type="text/javascript" src="js/mocha.js"></script>
+  <script>
+  mocha.checkLeaks(); // checks for global variable leaks
+  mocha.run();
+  </script>
+</body>
+</html>
